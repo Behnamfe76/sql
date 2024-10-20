@@ -40,7 +40,24 @@ SELECT a.id, a.name as "employee", b.name as "supervisor"
 from employees as a, employees as b
 where a.supervisor_id = b.id;
 
+
 -- outer JOIN
 SELECT count(emp.emp_no) from employees as emp 
 left join dept_manager as dep on emp.emp_no = dep.emp_no
 where dep.emp_no is null;
+
+-- cross JOIN
+
+SELECT a.emp_no, b.dept_name
+FROM employees as a
+CROSS JOIN departments as b;
+
+-- full OUTER JOIN
+SELECT *
+FROM employees as a
+FULL JOIN departments as b ON a.id = b.id;
+
+-- USING keyword
+SELECT *
+from employees as a
+inner join salaries as b USING(emp_no);

@@ -1,0 +1,21 @@
+SQL commands
+    DDl --> DATA DEFINITION LANGUAGE
+        CREATE
+        ALTER
+        DROP
+        REMOVE
+        TRUNCATE
+        COMMENT
+    DQL --> DATA QUERY LANGUAGE
+        SELECT
+    DML --> DATA MODIFICATION LANGUAGE
+        INSET
+        UPDATE
+        DELETE
+        MERGE
+        CALL
+        EXPLAIN PLAN
+        LOCK TABLE
+    DCL --> DATA CONTROL LANGUAGE
+        GRANT
+        REVOKE
